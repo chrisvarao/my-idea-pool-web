@@ -1,0 +1,28 @@
+.ideas__add-button {
+  background: none;
+  border: none;
+}
+
+.ideas__center-container {
+  text-align: center;
+  padding-top: 125px;
+}
+
+.ideas__center-image {
+  display: block;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.ideas__center-text {
+  font-size: 20px;
+  color: rgba(42,56,66,1);
+}
+
+.idea__table-header {
+  list-style-type: none;
+}
+
+.idea__table-header .idea__average {
+  font-weight: bold;
+}

@@ -1,0 +1,41 @@
+.sidebar {
+  text-align: center;
+  background: green;
+  width: 200px;
+  height: 100%;
+}
+
+.sidebar__icon-container {
+  padding: 40px 0px;
+}
+
+.sidebar__icon {
+  display: block;
+  margin: auto;
+  width: 64px;
+  border-radius: 100%;
+}
+
+.sidebar__icon-text {
+  display: block;
+  margin: auto;
+  padding: 15px 0px;
+  color: white;
+}
+
+.sidebar__user-name {
+  font-size: 20px;
+}
+
+.sidebar__separator {
+  margin: 0px 30px 15px;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar__logout-button {
+  background: none;
+  color: rgba(42,56,66,0.65);
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,41 @@
+html, body {
+  --mdc-theme-primary: #00A843;
+  --mdc-theme-secondary: #009833;
+  height: 100%;
+  font-family: "Robotto", sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin: 0px auto 60px;
+}
+
+.user-container {
+  margin-top: 100px;
+}
+
+.user-input-field {
+  width: 100%;
+}
+
+.user-input-field-container {
+  margin-bottom: 35px;
+}
+
+.user-button {
+  background-color: var(--mdc-theme-primary) !important;
+  border-radius: 0px !important;
+  color: white !important;
+  margin-left: -15px !important;
+  width: 100%;
+}
+
+.user-button:hover {
+  background-color: var(--mdc-theme-secondary) !important;
+}
+
+.user-link {
+  padding: 0px;
+  text-align: right;
+}
