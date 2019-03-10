@@ -98,13 +98,13 @@ class SignUp extends React.Component {
                             type="submit"
                             onClick={onSubmit}
                           >
-                            LOG IN
+                            SIGN UP
                           </Button>
                         </Col>
                         <Col className="user-link" sm={{ span: 9 }}>
                           Already have an account?&nbsp;
                           <Link to="/signin">
-                            SIGN UP
+                            Log in
                           </Link>
                         </Col>
                       </Row>
