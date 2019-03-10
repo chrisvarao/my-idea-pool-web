@@ -81,6 +81,7 @@ class SignUp extends React.Component {
                         className="user-input-field"
                         value={password}
                         onChange={onPasswordChange}
+                        type="password"
                         placeholder="Password"
                       />
                     </div>
