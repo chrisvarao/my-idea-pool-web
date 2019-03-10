@@ -17,3 +17,12 @@
   margin: 0px 25px;
   font-size: 14px;
 }
+
+.idea__inner > span {
+  padding-top: 16px;
+}
+
+.idea__button {
+  background: none;
+  border: none;
+}

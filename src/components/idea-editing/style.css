@@ -1,15 +1,14 @@
-.idea__confirm-button {
+.idea:hover .idea__confirm-button {
   background: url('../../../assets/Confirm_V.png');
   background-repeat: no-repeat;
   background-position: center;
-  border: none;
   cursor: pointer;
 }
 
-.idea__cancel-button {
+.idea:hover .idea__cancel-button {
   background: url('../../../assets/Cancel_X.png');
   background-repeat: no-repeat;
   background-position: center;
-  border: none;
   cursor: pointer;
 }
+

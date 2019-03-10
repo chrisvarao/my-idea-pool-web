@@ -26,3 +26,7 @@
 .idea__table-header .idea__average {
   font-weight: bold;
 }
+
+.ideas__add-button:not(:disabled) {
+  cursor: pointer;
+}

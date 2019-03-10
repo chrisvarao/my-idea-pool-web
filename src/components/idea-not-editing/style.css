@@ -1,15 +1,13 @@
-.idea__edit-button {
+.idea:hover .idea__edit-button {
   background: url('../../../assets/pen.png');
   background-repeat: no-repeat;
   background-position: center;
-  border: none;
   cursor: pointer;
 }
 
-.idea__delete-button {
+.idea:hover .idea__delete-button {
   background: url('../../../assets/bin.png');
   background-repeat: no-repeat;
   background-position: center;
-  border: none;
   cursor: pointer;
 }

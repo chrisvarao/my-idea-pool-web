@@ -73,9 +73,7 @@ class IdeaEditing extends React.Component {
           className="idea__not-content idea__button idea__cancel-button"
           type="button"
           onClick={onCancelButtonClick}
-        >
-          x
-        </button>
+        />
       </div>
     );
   }
