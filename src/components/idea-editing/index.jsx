@@ -25,7 +25,7 @@ class IdeaEditing extends React.Component {
     const average = ((impact + ease + confidence) / 3).toFixed(2);
 
     const getSelectOptions = keyPrefix =>
-      range(0, 11).map(value => <option key={`${keyPrefix}_${value}`} value={value}>{value}</option>);
+      range(1, 11).map(value => <option key={`${keyPrefix}_${value}`} value={value}>{value}</option>);
 
     const onContentChange = (e) => {
       this.setState({ content: e.target.value });
