@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router';
+import { BrowserRouter } from 'react-router-dom';
 
-import { getIdeaPage } from '../../api';
+import { getCurrentUserFromCookies } from '../../api';
 import MainContent from '../main-content';
 import Sidebar from '../sidebar';
 
@@ -10,27 +10,22 @@ import './style.css';
 
 class App extends React.Component {
   componentWillMount() {
-    const { history } = this.props;
-    this.unlisten = history.listen((location) => {
-      const { user } = this.props;
-      if (location.pathname === '/ideas' && user) {
-        getIdeaPage(1);
-      }
-    });
-  }
-
-  componentWillUnmount() {
-    this.unlisten();
+    getCurrentUserFromCookies();
   }
 
   render() {
+    const { ready } = this.props;
     return (
       <div className="app">
         <Sidebar />
-        <MainContent />
+        {ready ? (
+          <BrowserRouter>
+            <MainContent />
+          </BrowserRouter>
+        ) : null}
       </div>
     );
   }
 }
 
-export default withRouter(connect(({ user }) => ({ user }))(App));
+export default connect(({ ready }) => ({ ready }))(App);

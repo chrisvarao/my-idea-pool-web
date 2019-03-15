@@ -81,7 +81,7 @@ export const getCurrentUserFromCookies = async () => {
   if (jwt) {
     setState('user.jwt', jwt);
     setState('user.refreshToken', refreshToken);
-    return getCurrentUser().then(() => {
+    return getCurrentUser().finally(() => {
       setState('ready', true);
     });
   }
